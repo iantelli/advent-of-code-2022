@@ -1,4 +1,5 @@
 use std::collections::HashMap;
+
 fn main() {
     let content: String = load_input();
 
@@ -7,7 +8,7 @@ fn main() {
         let game = (line.chars().nth(0).unwrap(), line.chars().nth(2).unwrap());
         score += rps(game);
     }
-    println!("{}", score); // 12855
+    println!("{}", score); // Answer: 12855
 }
 
 fn load_input() -> String {
